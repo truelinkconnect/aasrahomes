@@ -743,6 +743,64 @@ h6,
     }
 }
 
+.plans-tabs {
+    position: relative;
+    display: inline-flex;
+    background: #f2f2f2;
+    border-radius: 30px;
+    padding: 6px;
+}
+
+    .plans-tabs span {
+        position: relative;
+        z-index: 2;
+        padding: 8px 18px;
+        font-weight: 600;
+        cursor: pointer;
+        color: #666;
+        white-space: nowrap;
+    }
+
+        .plans-tabs span.active {
+            color: #B78D65;
+        }
+
+.plans-highlight {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    height: calc(100% - 12px);
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.35s ease;
+    z-index: 1;
+}
+
+.date-wrapper {
+    position: relative;
+}
+
+.fake-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #999;
+    pointer-events: none;
+    font-size: 14px;
+}
+
+.date-wrapper input:focus + .fake-placeholder,
+.date-wrapper input:not(:placeholder-shown) + .fake-placeholder {
+    display: none;
+}
+.form-control {
+    text-align: center;
+}
+
+
+
 /*** Footer ***/
 .footer .btn.btn-link {
     display: block;
