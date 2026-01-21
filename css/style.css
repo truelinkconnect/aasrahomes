@@ -160,6 +160,22 @@ h6,
     }
 }
 
+.nav-logo {
+    height: 48px; /* or 40–56px depending on your navbar */
+    width: auto;
+    display: block;
+}
+
+
+.brand-text {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1;
+}
+
+
+
 
 /*** Header ***/
 .owl-carousel-inner {
